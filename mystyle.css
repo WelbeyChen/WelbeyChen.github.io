@@ -1,0 +1,61 @@
+#all{
+	margin: auto;
+	width: 95%;
+	border: 15px solid #000080;
+	padding: 10px;
+	background-color : #D33F96;
+}
+#title{
+	background-color: rgba(0,0,255,0.5);
+	color: orange;
+	font-family: "Lucida Console",monospace;
+	text-align: center;
+}
+hr{
+	border: 1px dashed #D21404; /*HR Styling CSS*/
+}
+h1{
+	font-size: 64px;
+	padding-top: 24px;
+}
+#name{
+	font-size: 32px;
+}
+#last{
+	font-size: 32px; /*Font Size CSS*/
+	padding-bottom: 24px;
+}
+#main{
+	font-size: 24px;
+	color: #E9ECEB;
+	font-family: "Arial",sans-serif;
+}
+#subtitle{
+	font-size: 30px;
+	font-family: "Lucida Handwriting",cursive; /*Font Type CSS, change the font type according to our selection*/
+	color: yellow;
+}
+table{
+	background-color: blue;
+}
+#num{
+	font-size: 16px;
+}
+#txt1{
+	height: 24px;
+}
+#txt2{
+	height: 24px;
+}
+a:link {
+  color: blue;
+}
+a:hover {
+  color: yellow; /*Hover CSS, when your cursor close to the link, the link will change its color*/
+}
+img{
+	border-radius: 50px; /*Rounded Image CSS, make the every tip (4) of the images rounded*/
+	max-width: 100%;
+	height: auto;
+}
+

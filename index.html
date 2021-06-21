@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Dream Crusher CV</title>
+		<link rel = "stylesheet" href = "mystyle.css">
+	</head>
+	<body bgcolor = "black">
+	<div id = "all">
+			<div id = "title">
+			<h1>------ Biography ------</h1>
+			<hr>
+			<p id = "name">Kun Liangs-Chen</p>
+			<p id = "last">A.k.a The Dream Crusher</p>
+			</div>
+			<center><img src = "https://tse4.mm.bing.net/th?id=OIP.1HNEEwFJDC5tPZ2HDCjKqQHaKq&pid=Api&P=0&w=300&h=300" alt = "photo"></img></center>
+			<div id = "main">
+			<p id = "subtitle">Education</p>
+			<ul style="list-style-type:disc">
+				<li>Computer Science Engineering Undergraduate, National Taiwan University</li>
+				<li>Computer Science Engineering Graduate, Havard University</li>
+				<li>Computer Science Engineering PostGraduate, Massachusetts Institute of Technology</li>
+			</ul>
+			<p id = "subtitle">Basic Skills</p>
+			<ul style="list-style-type:disc">
+				<li>Web Programming</li>
+				<ul style = "list-style-type: square; font-size: 16px">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JAVASCRIPT</li>
+					<li>PHP</li>
+				</ul>
+				<li>C, C++, JAVA, PHYTON Languages</li>
+				<li>Data Structures</li>
+			</ul>
+			<p id = "subtitle">Experiences</p>
+			<ul style="list-style-type:disc">
+				<li>2001-2010 : Taiwan Government Research Team Development for ARC ID Cards</li>
+				<li>2010-2015 : National Central University, MIS Proffessor</li>
+				<li>2015-2020 : Indonesia Government Research Team for Jakarta MRT</li>
+				<li>2020-2021 : India Cyber Security Team</li>
+			</ul>
+			<p id = "subtitle">Youtube Video</p>
+			<a href="https://www.youtube.com/watch?v=S571utOtKG8">Click Here for my Youtube Video!!!</a>
+			<p id = "subtitle">One of My Program (NUMBER GENERATOR)</p>
+			<table>
+			<tr>
+			<td id = "num"> First Number </td>
+			<td> <input type = "text" id = "txt1" name = "txt1" placeholder = "Enter Your Number"/> </td>
+			</tr>
+			<tr>
+			<td id = "num"> Second Number </td>
+			<td> <input type = "text" id = "txt2" name = "txt2" placeholder = "Enter Your Number"/> </td>
+			</tr>
+			<tr>
+			<td> </td>
+			<td align = "center">
+				<input type = "button" id = "btnplus" name = "btnplus" value = "+" onclick = "berhitung('+')"/>
+				<input type = "button" id = "btnminus" name = "btnminus" value ="-" onclick = "berhitung('-')"/>
+				<input type = "button" id = "btnkali" name = "btnkali" value = "*" onclick = "berhitung('*')"/>
+				<input type = "button" id = "btnbagi" name = "btnbagi" value ="/" onclick = "berhitung('/')"/>
+				<input type = "button" id = "btnmerge" name = "btnmerge" value ="merge" onclick = "berhitung('merge')"/>
+			</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+		</div>	
+	</body>
+</html>
+
+<script type ="text/javascript">
+	function berhitung (operator)
+	{
+	var ang1 = document.getElementById("txt1").value;
+	var ang2 = document.getElementById("txt2").value;
+	var angka1 = parseInt(document.getElementById("txt1").value);
+	var angka2 = parseInt(document.getElementById("txt2").value);
+	if(operator == "+")
+	{
+		alert(angka1 + " " + operator + " " + angka2 + " = " + (angka1+angka2));
+	}
+	else if (operator == "-")
+	{
+		alert(angka1 + " " + operator + " " + angka2 + " = " + (angka1-angka2));
+	}
+	else if(operator == "*")
+	{
+		alert(angka1 + " " + operator + " " + angka2 + " = " + (angka1*angka2));
+	}
+	else if (operator == "/")
+	{
+		alert(angka1 + " " + operator + " " + angka2 + " = " + (angka1/angka2));
+	}
+	else if (operator == "merge")
+	{
+		alert(ang1 + " " + operator + " " + ang2 + " = " + (ang1+ang2));
+	}
+}
+</script>
